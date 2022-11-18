@@ -1,0 +1,75 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\numberline {1}Introducción}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Qué es BIM}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Y eso, ¿cómo se plasma en la práctica?}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Las ventajas de usar BIM}{6}{section.1.3}%
+\contentsline {subsubsection}{notas para reflexionar\ldots }{6}{section*.2}%
+\contentsline {section}{\numberline {1.4}VDC (Virtual Design and Construction)}{6}{section.1.4}%
+\contentsline {chapter}{\numberline {2}BIM en la fase de diseño}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Documentación previa}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Diseño conceptual y arquitectural}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Cálculos estructurales}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Instalaciones y equipamientos}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Análisis de rendimiento}{10}{section.2.5}%
+\contentsline {chapter}{\numberline {3}BIM en la fase de construcción}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Planificación}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Estimación de costos}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Logística}{12}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Gestión del trabajo}{13}{section.3.4}%
+\contentsline {subsubsection}{notas para reflexionar:}{13}{section*.3}%
+\contentsline {chapter}{\numberline {4}BIM en la fase de operación y mantenimiento}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Información detallada sobre el edificio, tal y como ha sido construido}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Mantenimiento, gestión de cambios}{15}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Los diferentes ``usos BIM''}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Consideraciones previas:}{16}{section.5.1}%
+\contentsline {subsubsection}{Grados de madurez en la aplicación de la metodología de trabajo BIM:}{16}{section*.4}%
+\contentsline {section}{\numberline {5.2}Un resumen rápido}{17}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Detalle de algunos usos BIM}{17}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Normativas, contratos, requisitos, estandares,\ldots }{21}{chapter.6}%
+\contentsline {section}{\numberline {6.1}BEP (Bim Execution Plan),\\para qué se va a usar BIM en este proyecto}{21}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Nomenclatura, códigos de clasificación y códigos identificadores}{22}{section.6.2}%
+\contentsline {section}{\numberline {6.3}LOD (Level Of Development, Level of Detail)\\LOIN (Level Of Information Need)\\NDI (Nivel de Información),\\el nivel de definición de elementos necesario para cada uso que se va a hacer de BIM}{22}{section.6.3}%
+\contentsline {section}{\numberline {6.4}CDE (Common Data Environment), la plataforma concreta de hardware/software sobre la que se va a compartir información}{23}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Estandares impulsados por buildingSMART}{24}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}IDM (Information Delivery Manuals)}{24}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}IFC schema (Industry Foundation Classes)}{24}{subsection.6.5.2}%
+\contentsline {subsubsection}{MVD (Model View Definitions)}{25}{section*.5}%
+\contentsline {subsubsection}{IDS (Information Delivery Specifications)}{25}{section*.6}%
+\contentsline {subsection}{\numberline {6.5.3}bSDD (buildingSmart Data Dictionary)}{25}{subsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.5.4}BCF, ({\small BIM} Collaboration Format)}{25}{subsection.6.5.4}%
+\contentsline {section}{\numberline {6.6}El estandar ISO 19650}{25}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}OIR, PIR : intereses generales de cada una de las partes}{26}{subsection.6.6.1}%
+\contentsline {subsection}{\numberline {6.6.2}AIR, EIR : a la hora de cerrar un acuerdo o contrato}{26}{subsection.6.6.2}%
+\contentsline {subsection}{\numberline {6.6.3}PIM, AIM : información a elaborar y entregar}{26}{subsection.6.6.3}%
+\contentsline {section}{\numberline {6.7}Diagrama resumen de flujos de información}{27}{section.6.7}%
+\contentsline {section}{\numberline {6.8}(Algunos) enlaces ilustrativos}{28}{section.6.8}%
+\contentsline {chapter}{\numberline {7}(Algunas) cuestiones a considerar en la redacción de un BEP}{31}{chapter.7}%
+\contentsline {subsection}{\numberline {7.0.1}Datos generales del proyecto}{31}{subsection.7.0.1}%
+\contentsline {subsection}{\numberline {7.0.2}Estandarización para gestionar la información}{31}{subsection.7.0.2}%
+\contentsline {subsection}{\numberline {7.0.3}Procedimientos para intercambio de información}{33}{subsection.7.0.3}%
+\contentsline {subsection}{\numberline {7.0.4}Entregables que se esperan recibir}{33}{subsection.7.0.4}%
+\contentsline {chapter}{\numberline {8}Apéndice: ejemplos de herramientas BIM}{34}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Software de modelado}{34}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Software de cálculo y análisis}{35}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Software para visualizar modelos}{35}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Plataformas CDE (Common Data Environment)}{35}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Software de planificación, colaboración, coordinación, gestión,\ldots }{36}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Software de gestión de activos, FM (Facilities Management)}{38}{section.8.6}%
+\contentsline {section}{\numberline {8.7}Bibliotecas de objetos BIM}{38}{section.8.7}%
+\contentsline {section}{\numberline {8.8}Entornos de programación BIM}{39}{section.8.8}%
+\contentsline {section}{\numberline {8.9}Medios para presentar información digital}{39}{section.8.9}%
+\contentsline {subsection}{\numberline {8.9.1}tabletas, móviles y otros dispositivos en obra}{39}{subsection.8.9.1}%
+\contentsline {subsection}{\numberline {8.9.2}grandes pantallas táctiles - pizarras digitales}{40}{subsection.8.9.2}%
+\contentsline {subsection}{\numberline {8.9.3}renderizado}{40}{subsection.8.9.3}%
+\contentsline {subsection}{\numberline {8.9.4}realidad aumentada, AR}{40}{subsection.8.9.4}%
+\contentsline {subsection}{\numberline {8.9.5}realidad virtual, VR}{40}{subsection.8.9.5}%
+\contentsline {section}{\numberline {8.10}Medios para capturar información física}{41}{section.8.10}%
+\contentsline {subsection}{\numberline {8.10.1}cámaras 360}{41}{subsection.8.10.1}%
+\contentsline {subsection}{\numberline {8.10.2}escaneres LIDAR 3D}{41}{subsection.8.10.2}%
+\contentsline {subsection}{\numberline {8.10.3}drones y robots para inspección}{41}{subsection.8.10.3}%
+\contentsline {subsection}{\numberline {8.10.4}extraer información desde nubes de puntos}{42}{subsection.8.10.4}%
+\contentsline {subsection}{\numberline {8.10.5}otros equipos interesantes}{42}{subsection.8.10.5}%
+\contentsline {chapter}{\numberline {9}Apéndice: nuevas formas de construir\ldots }{43}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Prefabricación industrializada}{43}{section.9.1}%
+\contentsline {section}{\numberline {9.2}IPD (Integrated Project Delivery) \\ NEC (New Engineering Contract)}{44}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Automatización robótica}{45}{section.9.3}%
