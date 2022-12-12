@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.9.8)  27 OCT 2022 11:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.9.8)  12 DEC 2022 09:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -403,8 +403,8 @@ File: l3backend-pdftex.def 2022-08-23 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box58
 )
 (Industrializacion_y_transformacion_digital_de_la_construccion.aux
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
 )
 \openout1 = `Industrializacion_y_transformacion_digital_de_la_construccion.aux'
 .
@@ -1264,9 +1264,9 @@ Overfull \hbox (93.90892pt too wide) in paragraph at lines 1010--1014
 station-[]solutions / robotic-[]total-[]stations /
  []
 
-LaTeX Info: Redefining \. on input line 1021.
-LaTeX Info: Redefining \% on input line 1021.
-Package cleveref Info: loaded `spanish' language definitions on input line 1021
+LaTeX Info: Redefining \. on input line 1022.
+LaTeX Info: Redefining \% on input line 1022.
+Package cleveref Info: loaded `spanish' language definitions on input line 1022
 .
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1277,44 +1277,44 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [41]
-Overfull \hbox (37.8339pt too wide) in paragraph at lines 1023--1026
+Overfull \hbox (37.8339pt too wide) in paragraph at lines 1024--1027
 [][][]$\OT1/cmtt/m/n/12 https : / / www . bentley . com / es / products / produ
 ct-[]line / reality-[]modeling-[]software /
  []
 
 
-Overfull \hbox (37.8339pt too wide) in paragraph at lines 1023--1026
+Overfull \hbox (37.8339pt too wide) in paragraph at lines 1024--1027
 [][]$\OT1/cmtt/m/n/12 https : / / leica-[]geosystems . com / products / laser-[
 ]scanners / software / leica-[]cyclone$[][] 
  []
 
 
-Overfull \hbox (20.30888pt too wide) in paragraph at lines 1023--1026
+Overfull \hbox (20.30888pt too wide) in paragraph at lines 1024--1027
 [][]$\OT1/cmtt/m/n/12 https : / / www . faro . com / es-[]es / productos / cons
 truccion-[]bim-[]cim / faro-[]as-[]built/$[][] 
  []
 
 
-Overfull \hbox (11.63388pt too wide) in paragraph at lines 1028--1033
+Overfull \hbox (11.63388pt too wide) in paragraph at lines 1029--1034
 [][]$\OT1/cmtt/m/n/12 https : / / www . hilti . es / c / CLS _ MEA _ TOOL _ INS
 ERT _ 7127 / CLS _ CONSTRUCTION _ TOTAL _
  []
 
 
-Overfull \hbox (105.25893pt too wide) in paragraph at lines 1028--1033
+Overfull \hbox (105.25893pt too wide) in paragraph at lines 1029--1034
 [][]$\OT1/cmtt/m/n/12 https : / / www . topconpositioning . com / es / construc
 ci % C3 % B3n / interiores # panel-[]solution-[]34441$[][] 
  []
 
 
-Overfull \hbox (118.10893pt too wide) in paragraph at lines 1028--1033
+Overfull \hbox (118.10893pt too wide) in paragraph at lines 1029--1034
 [][]$\OT1/cmtt/m/n/12 https : / / www . topconpositioning . com / es / construc
 ci % C3 % B3n / trabajo-[]situ # panel-[]solution-[]34471$[][] 
  []
 
-LaTeX Info: Redefining \. on input line 1035.
-LaTeX Info: Redefining \% on input line 1035.
-Package cleveref Info: loaded `spanish' language definitions on input line 1035
+LaTeX Info: Redefining \. on input line 1036.
+LaTeX Info: Redefining \% on input line 1036.
+Package cleveref Info: loaded `spanish' language definitions on input line 1036
 .
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1329,18 +1329,18 @@ Cap\'{\i }tulo 9.
 [43
 
 ]
-Overfull \hbox (19.30888pt too wide) in paragraph at lines 1074--1082
+Overfull \hbox (19.30888pt too wide) in paragraph at lines 1075--1083
 [][]$\OT1/cmtt/m/n/12 https : / / www . tekla . com / la / soluciones / fabrica
 ntes-[]de-[]concreto-[]prefabricado$[][] 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1084.
+(hyperref)                removing `\\' on input line 1085.
 
-LaTeX Info: Redefining \. on input line 1093.
-LaTeX Info: Redefining \% on input line 1093.
-Package cleveref Info: loaded `spanish' language definitions on input line 1093
+LaTeX Info: Redefining \. on input line 1094.
+LaTeX Info: Redefining \% on input line 1094.
+Package cleveref Info: loaded `spanish' language definitions on input line 1094
 .
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1351,26 +1351,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [44]
-Overfull \hbox (69.70891pt too wide) in paragraph at lines 1098--1110
+Overfull \hbox (69.70891pt too wide) in paragraph at lines 1099--1111
 [][]$\OT1/cmtt/m/n/12 https : / / www . aiacontracts . org / resources / 64146-
 []integrated-[]project-[]delivery-[]a-[]guide$[][] 
  []
 
 
-Overfull \hbox (144.80894pt too wide) in paragraph at lines 1098--1110
+Overfull \hbox (144.80894pt too wide) in paragraph at lines 1099--1111
 [][]$\OT1/cmtt/m/n/12 https : / / www . aiacontracts . org / contract-[]doc-[]p
 ages / 27166-[]integrated-[]project-[]delivery-[]ipd-[]family$[][] 
  []
 
 
-Overfull \hbox (46.71065pt too wide) in paragraph at lines 1121--1128
+Overfull \hbox (46.71065pt too wide) in paragraph at lines 1122--1129
 \OT1/cmr/m/n/12 Hilti PLT300: [][]$\OT1/cmtt/m/n/12 https : / / www . hilti . e
 s / c / CLS _ MEA _ TOOL _ INSERT _ 7127 / CLS _ CONSTRUCTION _
  []
 
-LaTeX Info: Redefining \. on input line 1134.
-LaTeX Info: Redefining \% on input line 1134.
-Package cleveref Info: loaded `spanish' language definitions on input line 1134
+LaTeX Info: Redefining \. on input line 1135.
+LaTeX Info: Redefining \% on input line 1135.
+Package cleveref Info: loaded `spanish' language definitions on input line 1135
 .
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1381,9 +1381,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [45]
-LaTeX Info: Redefining \. on input line 1167.
-LaTeX Info: Redefining \% on input line 1167.
-Package cleveref Info: loaded `spanish' language definitions on input line 1167
+LaTeX Info: Redefining \. on input line 1169.
+LaTeX Info: Redefining \% on input line 1169.
+Package cleveref Info: loaded `spanish' language definitions on input line 1169
 .
 
 
@@ -1395,9 +1395,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [46]
-LaTeX Info: Redefining \. on input line 1169.
-LaTeX Info: Redefining \% on input line 1169.
-Package cleveref Info: loaded `spanish' language definitions on input line 1169
+LaTeX Info: Redefining \. on input line 1171.
+LaTeX Info: Redefining \% on input line 1171.
+Package cleveref Info: loaded `spanish' language definitions on input line 1171
 .
 
 
@@ -1413,25 +1413,18 @@ LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 Package cleveref Info: loaded `spanish' language definitions on input line 22.
 )
-
-Package rerunfilecheck Warning: File `Industrializacion_y_transformacion_digita
-l_de_la_construccion.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Industrializacion_y_transformacion_
-digital_de_la_construccion.out':
-(rerunfilecheck)             Before: 6644CF51D82F498B447B265B2542E1D5;6075
-(rerunfilecheck)             After:  2156E1EF950F9ADA8DEF3FC869274101;17852.
+Package rerunfilecheck Info: File `Industrializacion_y_transformacion_digital_d
+e_la_construccion.out' has not changed.
+(rerunfilecheck)             Checksum: 2156E1EF950F9ADA8DEF3FC869274101;17852.
  ) 
 Here is how much of TeX's memory you used:
- 13709 strings out of 477843
- 229455 string characters out of 2833369
+ 13708 strings out of 477843
+ 229599 string characters out of 2833369
  595954 words of memory out of 3000000
- 32323 multiletter control sequences out of 15000+600000
+ 32322 multiletter control sequences out of 15000+600000
  481420 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,13n,77p,701b,1401s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,13n,77p,1196b,1401s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\jmurua\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
 m1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:
 /Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fil
@@ -1445,9 +1438,9 @@ onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmtt12.pfb>
 Output written on Industrializacion_y_transformacion_digital_de_la_construccion
-.pdf (48 pages, 532558 bytes).
+.pdf (48 pages, 544826 bytes).
 PDF statistics:
- 1015 PDF objects out of 1200 (max. 8388607)
+ 1017 PDF objects out of 1200 (max. 8388607)
  127 named destinations out of 1000 (max. 500000)
  568 words of extra memory for PDF output out of 10000 (max. 10000000)
 
