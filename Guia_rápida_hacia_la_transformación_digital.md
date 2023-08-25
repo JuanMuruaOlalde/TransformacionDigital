@@ -8,7 +8,7 @@ Estamos aún en una gestión basada en papel cuando dicha gestión se basa princ
 
 - Intercambios de mensajes, correos electrónicos o similares.
 
-- Uso de documentos y hojas de cálculo en alguna carpeta departamental en un servidor o, peor aún, en  elgún PC individual.
+- Uso de documentos y hojas de cálculo en alguna carpeta departamental en un servidor o, peor aún, en algún PC individual.
 
 Estamos avanzando hacia una gestión digital cuando:
 
