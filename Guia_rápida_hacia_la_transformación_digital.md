@@ -12,7 +12,7 @@ Estamos aún en una gestión basada en papel cuando dicha gestión se basa princ
 
 Estamos avanzando hacia una gestión digital cuando:
 
-- Quien produce o tiene conocimiento de cualquier información, la almacena directamente en un sistema centralizado común (ERP, CRM, MES, PDM, etc).
+- Quien produce o tiene conocimiento de cualquier información, la almacena directamente en un sistema centralizado común (ERP, CRM, MES, PDM, CDE, etc).
 
 - Quien necesita cualquier información, la obtiene directamente de dichos sistemas. Independientemente de la unidad administrativa o la ubicación física donde trabaje.
 
