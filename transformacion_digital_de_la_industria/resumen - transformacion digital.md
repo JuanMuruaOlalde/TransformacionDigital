@@ -69,7 +69,11 @@ El segundo gran escollo aparece solo en empresas ya establecidas: ¿a qué traba
 
 El tercer escollo también aparece solo en empresas establecidas y reside en los cambios en la "estructura de poder". Toda la organización de la empresa tiende a hacerse mucho más plana una vez que la información circula de forma fluida.
 
-nota: Estos segundo y tercer escollo no se dan en empresas de nueva creación. 
+nota: Estos segundo y tercer escollo no se dan en empresas de nueva creación.
+
+nota:
+Ahondando en la circulación fluida de información. Cuanto más fluido y transparente es el flujo de información, más fácil y rápido se detectan los problemas. Esto que es una ventaja enorme si se utiliza para *resolver problemas*. Puede ser un enorme lastre si se utiliza para *buscar culpables*. 
+
 
 ## conclusión
 
