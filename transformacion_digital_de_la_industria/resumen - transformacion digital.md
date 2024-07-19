@@ -57,7 +57,7 @@ Todos los ERP y PDM/PLM modernos soportan flujos de trabajo adecuados a ambas re
 
 Hasta aquí la teoria. Al llevarla a la práctica es cuando surgen los problemas. 
 
-La principal dificultad (el escollo básico) reside en las destrezas que han de tener las personas; (todas las personas de la empresa). Entre las principales destrezas están las  tecnológicas (manejar los equipos y el software "con soltura") y las destrezas adaptativas (aprender formas de trabajar "que yo no haria así", preocuparse por conocer el entorno más allá de meramente "mi trabajo",...)
+La principal dificultad (el escollo básico) reside en las destrezas que han de tener las personas; (todas las personas de la empresa). Entre las principales destrezas están las  tecnológicas (manejar los equipos y el software con soltura) y las destrezas adaptativas (aprender nuevas formas de trabajar, preocuparse por conocer el entorno más allá de meramente "mi trabajo",...)
 
 Por lo demás, las dos reglas citadas marcan las pautas de cómo implantar el sistema. Pensando un poco, llevan a cuidar aspectos tales como: suficientes y adecuados equipos a disposición de todas las personas, suficiente y adecuada conectividad en todas las ubicaciones donde sea necesaria, suficiente y adecuada formación para que todas las personas manejen con soltura,... 
 
@@ -72,19 +72,19 @@ El tercer escollo también aparece solo en empresas establecidas y reside en los
 nota: Estos segundo y tercer escollo no se dan en empresas de nueva creación.
 
 nota:
-Ahondando en la circulación fluida de información. Cuanto más fluido y transparente es el flujo de información, más fácil y rápido se detectan los problemas. Esto que es una ventaja enorme si se utiliza para *resolver problemas*. Puede ser un enorme lastre si se utiliza para *buscar culpables*. 
+Ahondando en la circulación fluida de información. Cuanto más fluido y transparente es el flujo de información, más fácil y rápido se detectan los problemas. Esto que es una ventaja enorme si se utiliza para *resolver problemas*. Pero puede ser un enorme lastre si se utiliza para *buscar culpables*. 
 
 
 ## conclusión
 
-No me gusta quedarme solo en los problemas. Los problemas son lo más fácil de ver; lo difícil es plantear plantear ideas para intentar solucionarlos. Pero, por más vueltas que le doy, no llego a avanzar. Estoy atascado en la parte de que es imposible obligar a nadie a hacer nada de índole "intelectual". Tratando con personas, tan solo se puede animar y convencer.
+No me gusta quedarme solo en los problemas. Los problemas son lo más fácil de ver; lo difícil es plantear plantear ideas para intentar solucionarlos. Pero, por más vueltas que le doy, no llego a avanzar. Estoy atascado en la parte de que es imposible obligar a nadie a hacer nada de índole "intelectual" que no quiera hacer. Tratando con personas, tan solo se puede animar y convencer.
 
 En ese sentido, me parece vital dar acceso a formación y entrenamiento de calidad. Pero más allá de eso... no sé qué más se podría hacer.
 
 [Formación o entrenamiento](https://github.com/JuanMuruaOlalde/TransformacionDigital/blob/main/Formacion%20o%20Entrenamiento.md)
 
-nota: Las empresas de nueva creación tienen la ventaja de que controlan las contrataciones y pueden intentar no desviarse de una cultura empresarial determinada.
+nota: Las empresas de nueva creación tienen la ventaja de que controlan las contrataciones desde el principio y pueden intentar no desviarse de una cultura empresarial determinada.
 
 nota: 
 Cultura empresarial es la historia consolidada de los "usos y costumbres", de lo que se viene haciendo habitualmente en la empresa. 
-Establecer y mantener unas determinadas pautas de comportamiento es más fácil partiendo de cero que cambiando pautas heredadas. También es más rápido; cambiar implica pasar tiempo intentando comportarse y comportándose de otra manera.
+Establecer y mantener unas determinadas pautas de comportamiento es más fácil partiendo de cero que cambiando pautas heredadas. También es más rápido estableciéndolas desde un inicio; cambiar implica pasar tiempo intentando comportarse y comportándose de otra manera.
