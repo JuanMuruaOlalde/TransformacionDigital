@@ -40,7 +40,7 @@
 \contentsline {section}{\numberline {6.6}El estandar ISO 19650}{25}{section.6.6}%
 \contentsline {subsection}{\numberline {6.6.1}OIR, PIR : intereses generales de cada una de las partes}{26}{subsection.6.6.1}%
 \contentsline {subsection}{\numberline {6.6.2}AIR, EIR : a la hora de cerrar un acuerdo o contrato}{26}{subsection.6.6.2}%
-\contentsline {subsection}{\numberline {6.6.3}PIM, AIM : información a elaborar y entregar}{26}{subsection.6.6.3}%
+\contentsline {subsection}{\numberline {6.6.3}PIM, AIM : durante la obra y al finalizarla}{26}{subsection.6.6.3}%
 \contentsline {section}{\numberline {6.7}Diagrama resumen de flujos de información}{27}{section.6.7}%
 \contentsline {section}{\numberline {6.8}(Algunos) enlaces ilustrativos}{28}{section.6.8}%
 \contentsline {chapter}{\numberline {7}(Algunas) cuestiones a considerar en la redacción de un BEP}{31}{chapter.7}%
