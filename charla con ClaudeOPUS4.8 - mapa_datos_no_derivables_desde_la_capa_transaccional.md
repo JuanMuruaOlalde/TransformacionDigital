@@ -91,7 +91,7 @@ Para cada área: el trío de datos de alto valor + el modo de fallo dominante de
 
 ---
 
-## 3. Interfaces (objeto de análisis de primer nivel)
+## 3. Interfaces entre áreas
 
 La capa transaccional está organizada por área, así que su ceguera máxima está en las **costuras entre áreas**, que no pertenecen a nadie. Se mapean solo las costuras **portantes**: costuras por las que cruza una entidad real y en las cuales el traspaso tiene dato propio que ningún área reclama.
 
@@ -133,4 +133,4 @@ Otros *procesos transversales condicionados al tipo de empresa (no universales)*
 - Donde el dato lo genera un agente con vinculación personal en él, está **sesgado en origen**: cualquier captura acoplada a ese agente hereda su sesgo. Es mejor triangular o desacoplar.
 - La captura acoplada al **cierre de tarea** produce coartadas (teatro), no conocimiento. El registro sincero se hace en el momento de dudar, no en el de cerrar.
 - Las fugas más ricas viven en las **interfaces**, no dentro de las áreas — y son territorio de nadie.
-- No sobre-instrumentar: embeber la captura en el artefacto de gestión que ya existe (p. ej. un [flow board](https://www.susosise.es/documentos/Lista_de_tareas_priorizada_en_cabeza.pdf) captura la causa de espera sin acto de registro adicional) en lugar de añadir un parte encima.
+- No sobre-instrumentar: embeber la captura en un artefacto de gestión ya existente (p. ej. un [flow board](https://www.susosise.es/documentos/Lista_de_tareas_priorizada_en_cabeza.pdf) captura la causa de espera sin acto de registro adicional) en lugar de añadir un parte extra encima.
