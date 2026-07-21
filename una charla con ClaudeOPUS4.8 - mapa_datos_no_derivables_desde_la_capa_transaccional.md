@@ -2,7 +2,7 @@
 
 **Qué es este documento.** Mapa consolidado de los datos operacionales y estratégicos que una empresa genera pero que su capa transaccional (ERP/CRM/PLM/GMAO) es estructuralmente incapaz de registrar. No son campos que falten: son datos que no tienen tabla donde vivir porque pertenecen a la capa decisional, al  ámbito tácito o al contrafactual.
 
-**nota:** Este documento es una especie de resumen de una charla sobre el tema detallada en este otro [documento](transcripcion_charla_fugas_datos-v02-.md)
+**nota:** Este documento es una especie de resumen de una charla sobre el tema detallada en este otro [documento](charla_con_ClaudeOPUS4.8-transcripcion_charla_datos_no_derivables_desde_la_capa_transaccional.md)
 
 **Disclaimer:** Este documento es fruto de unas cuantas charlas con [Claude](https://claude.ai). La mayor parte de su contenido lo ha pensado y redactado esa IA.
 
