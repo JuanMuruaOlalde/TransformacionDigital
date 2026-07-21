@@ -16,7 +16,10 @@ Cada herramienta / técnica / procedimiento se analiza y debate desde:
 
 **Modo de trabajo acordado:** análisis técnico directo. Barrido rápido de todos los procesos primero; profundización proceso a proceso después.
 
-*nota:* Cuando en este documento se cita a la `Roseta`, se está refiriendo a https://www.susosise.es/documentos/roseta_de_prioridades.pdf y a una charla anterior que tuve con Claude sobre ella.
+*notas:* 
+- Cuando en este documento se cita a la `Roseta`, se está refiriendo a https://www.susosise.es/documentos/roseta_de_prioridades.pdf y a una charla anterior que tuve con Claude sobre ella. 
+- Sucede algo parecido cuando cita un `flow board`, que se refiere a https://www.susosise.es/documentos/Lista_de_tareas_priorizada_en_cabeza.pdf y a otra charla anterior con Claude sobre ella.
+- Cuando en este documento cita un `objeto frontera`, se está refiriendo a https://en.wikipedia.org/wiki/Boundary_object (Star & Griesemer); algo que sacó a colación el propio Claude en charlas anteriores.
 
 **Disclaimer:** Este documento es fruto de unas cuantas charlas con [Claude](https://claude.ai). La mayor parte de su contenido lo ha pensado y redactado esa IA.
 
@@ -28,8 +31,8 @@ La capa transaccional registra **cambios de estado de entidades modeladas** (un 
 
 - **El contrafactual**: lo que no llegó a ocurrir (venta perdida, proveedor descartado, avería evitada).
 - **El criterio**: el porqué de la decisión —capa decisional pura—, no su resultado.
-- **La textura temporal entre eventos**: esperas, colas, bloqueos y *su causa*. El ERP, con suerte, da inicio y fin; nunca el motivo del hueco.
-- **Lo no modelado**: retrabajos informales, apaños, coordinación verbal, percepciones. Ocurre precisamente *fuera* del sistema porque el sistema no lo contempla.
+- **La textura temporal entre eventos**: esperas, colas, bloqueos y *su causa*. El ERP, con suerte, da inicio y fin; nunca el motivo del hueco temporal.
+- **Lo no modelado**: retrabajos informales, apaños, (des)coordinación verbal, percepciones. Ocurre precisamente *fuera* del sistema porque el sistema no lo contempla.
 
 **Corolario:** capturar esto **no** es añadir campos al ERP (eso casi siempre fracasa). Es otra capa de registro, con otra lógica.
 
@@ -43,7 +46,7 @@ La capa transaccional registra **cambios de estado de entidades modeladas** (un 
 
 **Producción** — La *causa* de cada espera entre operaciones (falta de material, de utillaje, de decisión, cola). Microparadas y reajustes que no llegan a parte, y el criterio de secuenciación del encargado.
 
-**Mantenimiento** — Síntomas previos a la avería que el operario percibe ("iba raro", vibración) y que no se capturan hasta que hay orden correctiva. Reparaciones informales sin orden de trabajo.
+**Mantenimiento** — Síntomas previos a la avería que el operario percibe ("iba raro", vibración) y que no se capturan hasta que hay una orden correctiva. Reparaciones informales sin orden de trabajo.
 
 **Calidad** — No conformidades menores resueltas en línea sin registro. Concesiones/desviaciones aceptadas y su justificación; reclamaciones verbales que no escalan a formal.
 
@@ -51,7 +54,7 @@ La capa transaccional registra **cambios de estado de entidades modeladas** (un 
 
 **Ingeniería/Diseño** — Rationale de las decisiones de diseño y alternativas descartadas. Cambios de taller respecto al plano.
 
-**Administración/Finanzas** — Casi todo es transaccional; lo que escapa es el criterio: por qué una aprobación excepcional, cómo se prioriza qué se paga, coste real de gestionar un moroso.
+**Administración/Finanzas** — Casi todo es transaccional; lo que escapa es el criterio: el por qué de una aprobación excepcional, cómo se prioriza qué se paga, el coste real de gestionar un moroso.
 
 **RRHH** — Mapa de conocimiento real (quién sabe hacer qué de verdad). Motivos reales de rotación y sobrecarga no visible en los fichajes.
 
@@ -63,23 +66,23 @@ La capa transaccional registra **cambios de estado de entidades modeladas** (un 
 
 ## Profundización 1 — Producción (flujo físico de una orden)
 
-**1. Lanzamiento / secuenciación real.** El ERP tiene la orden y su fecha. Escapa el *criterio de secuencia real* del encargado, que diverge del plan. El sistema registra que se hizo C; no que se saltó el plan ni por qué.
+**1. Lanzamiento / secuenciación real.** El ERP tiene la orden y su fecha. Escapa el *criterio de secuencia real* del encargado, que diverge del plan. El sistema registra que se hizo C; no que se saltó el plan de hacer A y B, ni el por qué de ese cambio.
 
-**2. Preparación / cambio.** Escapa la *causa de la variación*: cambio estándar 20 min, real 55 porque faltaba una brida. Sin el porqué no hay SMED: optimizas un tiempo cuya varianza no entiendes.
+**2. Preparación / cambio.** Escapa la *causa de la variación*: cambio estándar 20 min, real 55 min porque faltaba una brida. Sin el porqué no hay [SMED](https://en.wikipedia.org/wiki/Single-minute_exchange_of_die): optimizas un tiempo cuya varianza no entiendes.
 
-**3. Operación / transformación.** Registra inicio/fin y buenas/rechazadas. Escapan las *microparadas dentro del bloque* y la velocidad real vs. nominal (disponibilidad y rendimiento del OEE). El ERP ve el bloque, nunca su interior.
+**3. Operación / transformación.** Registra inicio/fin y buenas/rechazadas. Escapan las *microparadas dentro del bloque* y la velocidad real vs. nominal (disponibilidad y rendimiento del [OEE](https://en.wikipedia.org/wiki/Overall_equipment_effectiveness). El ERP ve el bloque, nunca su interior.
 
-**4. Espera entre operaciones — el núcleo.** El tiempo de cola *sí* es derivable (fin de N, inicio de N+1). La causa no lo es de ningún modo, y las causas exigen acciones opuestas: material, cola de máquina, utillaje, decisión, operario. El ERP colapsa las cinco en "tiempo entre operaciones". Como la cola es el 80-95% del lead time, es *el* dato de producción: se mide el cuánto, es imposible el porqué, y sin el porqué el cuánto es inaccionable.
+**4. Espera entre operaciones — el núcleo.** El tiempo de cola *sí* es derivable (fin de N, inicio de N+1). La causa no lo es de ningún modo, y las causas exigen acciones opuestas: material, cola de máquina, utillaje, decisión, operario. El ERP colapsa las cinco acciones en "tiempo entre operaciones". Como la cola es el 80-95% del lead time, es *el* dato de producción: se mide el cuánto, es imposible saber el porqué, y sin el porqué el cuánto es inaccionable.
 
-**5. Autocontrol en proceso.** Escapan la NC menor corregida en línea sin declarar y la deriva que el operario detecta *antes* de sacar pieza mala.
+**5. Autocontrol en proceso.** Escapan la [NC](https://en.wikipedia.org/wiki/Nonconformity_(quality)) menor corregida en línea sin declarar y la deriva que el operario detecta *antes* de sacar pieza mala.
 
 **6. Movimiento interno.** Normalmente no registra nada. Muda pura e invisible.
 
-**7. Cierre / declaración.** Escapa la ficción del propio acto: imputación "cuadrada" a fin de turno. El cierre no describe lo que pasó, describe lo que cuadra.
+**7. Cierre / declaración.** Escapa la ficción del propio acto: imputación "cuadrada" a fin de turno. El cierre no describe lo que pasó realmente, describe lo que cuadra.
 
 **Juicio.** Trío de alto valor: **4 (causa de espera), 2 (causa de variación de setup), 3 (microparadas)**. El 6 no se mide, se elimina por diseño de layout. El 1 es materia de la Roseta.
 
-**Manipulación (subproceso 4).** Pedir al operario *clasificar* la causa es gameable: elegirá la socialmente segura ("falta de material") y nunca "esperé instrucción". Contramedida: categorías no incriminatorias, o triangular (el sistema de materiales sabe si el material faltaba de verdad).
+**Manipulación (subproceso 4).** Pedir al operario *clasificar* la causa es manipulable: siempre elegirá la socialmente segura ("falta de material") y nunca algo como "esperé instrucción". Contramedida: categorías no incriminatorias, o triangular con otro sistema (el sistema de materiales sabe si el material faltaba de verdad).
 
 **Encaje con el [flow board](https://www.susosise.es/documentos/Lista_de_tareas_priorizada_en_cabeza.pdf).** El parte separado muere por fricción. El tablero *ya es* el mecanismo: una tarea parada en una zona con etiqueta de motivo captura el dato 4 sin acto de registro adicional. En single-piece flow la cola debería tender a cero; medir su causa es el diagnóstico de por qué el flujo no fluye.
 
@@ -99,19 +102,19 @@ Cambio de naturaleza: aquí lo que se fuga es *conocimiento* —el porqué de la
 
 **5. Revisión / validación.** Guarda el veredicto. Escapa el *contenido*: qué se cuestionó, qué objeción se resolvió, qué se aprobó con reservas. Reduce un evento de conocimiento denso a un sello.
 
-**6. Cambios de ingeniería (ECO/ECR).** Bien registrado. Escapa la *causa raíz honesta* del cambio y el patrón agregado (si el 60% de los ECO nacen del mismo subproceso, es un diagnóstico).
+**6. Cambios de ingeniería ([ECO/ECR](https://en.wikipedia.org/wiki/Engineering_change_order)).** Bien registrado. Escapa la *causa raíz honesta* del cambio y el patrón agregado (si el 60% de los ECO nacen del mismo subproceso, es un diagnóstico).
 
 **7. Cambios informales de taller — eslabón perdido.** El plano dice X; en taller se ajusta y *el plano nunca se corrige*. La siguiente serie repite el problema. Se pierde la *verdad sobre el producto*.
 
-**Juicio.** Trío: **2 (alternativas descartadas), 3 (hipótesis de cálculo), 7 (divergencia taller-plano)**. Asimetría con Producción: aquí el detalle (4) y los cambios formales (6) están *bien* cubiertos; la fuga se concentra en el *porqué* aguas arriba y la *realidad* aguas abajo. El PLM registra el *qué* y es ciego al *porqué* y al *de verdad*.
+**Juicio.** Trío: **2 (alternativas descartadas), 3 (hipótesis de cálculo), 7 (divergencia taller-plano)**. Asimetría con Producción: aquí el detalle (4) y los cambios formales (6) están *bien* cubiertos; la fuga se concentra en el *porqué* aguas arriba y la *realidad* aguas abajo. El PLM registra el *qué* y es ciego al *porqué* y al *en realidad*.
 
-**Manipulación: teatro de documentación.** Un campo "justificación" obligatorio para cerrar produce justificaciones *a posteriori* ("según buenas prácticas"), peor que el vacío porque simula que el conocimiento está capturado. El rationale sincero se escribe al dudar, no al cerrar.
+**Manipulación: teatro de documentación.** Un campo "justificación" obligatorio para cerrar produce justificaciones *a posteriori* ("según buenas prácticas"), es peor que el vacío porque simula que el conocimiento está capturado. El rationale sincero se escribe al dudar, no al cerrar.
 
 **Encaje.** El subproceso 2 es una *decisión con posicionamiento explícito* → Roseta. El subproceso 7 es un *objeto frontera roto*: cuando el taller reinterpreta el plano sin que este lo absorba, deja de ser objeto frontera y pasa a ficción compartida.
 
 ---
 
-## Profundización 3 — Comercial (flujo de una oportunidad por el embudo)
+## Profundización 3 — Comercial (flujo de una oportunidad por el [embudo](https://en.wikipedia.org/wiki/Purchase_funnel))
 
 Cambio decisivo: aquí se fuga **el contrafactual** y aparece por primera vez con fuerza un factor —**el dato lo genera un agente con incentivos estructurales para distorsionarlo**—. El CRM está envenenado en origen.
 
@@ -123,74 +126,20 @@ Cambio decisivo: aquí se fuga **el contrafactual** y aparece por primera vez co
 
 **4. Negociación — núcleo.** Escapa lo denso: en qué apretó el cliente, qué concedimos y por qué, qué ofrecía el competidor, el *criterio real de decisión del cliente*. El evento donde aprendes qué valora el mercado, colapsado en "pedido: estas condiciones".
 
-**5. Cierre ganado/perdido — dato central.** El ganado se registra entero; el perdido casi nunca con su razón real. Paralelo literal con Producción: el comercial declara **"precio"** (externo, no es culpa mía) igual que el operario declara "falta de material". El dato más valioso y el más falseado.
+**5. Cierre ganado/perdido — dato central.** El ganado se registra entero; el perdido casi nunca con su razón real. Paralelo literal con Producción: el comercial declara **"precio"** (causa externa, no es culpa mía) igual que el operario declara "falta de material". Es el dato más valioso y el más falseado.
 
-**6. Traspaso a producción — las promesas.** Escapan las *promesas hechas para ganarlo* (plazo apretado, flexibilidad). Producción hereda un compromiso que nunca vio negociar: origen del pedido que "se cuela" (Producción 1).
+**6. Traspaso a producción — las promesas.** Escapan las *promesas hechas para ganarlo* (plazo apretado, flexibilidad). Producción hereda un compromiso que nunca vio negociar: es el origen del pedido que "se cuela" en la planificación (Producción 1).
 
 **7. Seguimiento de cuenta.** Escapan la salud de la relación y la *señal temprana de fuga* ("el cliente está tibio"). Análogo al síntoma previo a la avería, aquí previo a la pérdida del cliente.
 
-**Juicio.** Trío: **5, 4, 6**. Asimetría: aquí las fugas están *activamente distorsionadas* por un agente con incentivos propios, y la contramedida de Producción (triangular contra un sistema que sabe la verdad) *no existe*: solo el cliente sabe por qué dijo no, y no está en tu ERP.
+**Juicio.** Trío: **5, 4, 6**. Asimetría: aquí las fugas están *activamente distorsionadas* por un agente con incentivos propios, y la contramedida del material en Producción (triangular contra un sistema que sabe la verdad) *no existe*: solo el cliente sabe por qué dijo no, y esa información no está en tu ERP.
 
-**Manipulación (centro del departamento).** Tres incentivos estructurales: (1) posee la relación como *capital personal* → cuanto más opaco el CRM, más insustituible él; (2) la razón de pérdida le exculpa; (3) el forecast se *gestiona* (sandbagging, hockey stick). Un CRM exigido como trámite produce **teatro comercial**, con incentivo económico detrás. Único origen no contaminado del dato 5: entrevista win/loss por alguien distinto del comercial que perdió.
+**Manipulación (centro del departamento).** Tres incentivos estructurales: (1) posee la relación como *capital personal* → cuanto más opaco el CRM, más insustituible él; (2) la razón de pérdida le exculpa; (3) el forecast se *gestiona* (sandbagging, hockey stick). Un CRM exigido como trámite produce **teatro comercial**, con incentivo económico detrás. Único origen no contaminado del dato 5: entrevista win/loss al cliente, por alguien distinto del comercial que perdió.
 
-**Encaje.** (a) Comercial es el departamento más *decisional*: meter campos en la capa transaccional es un error de categoría. (b) El criterio de cualificación (2) es posicionamiento estratégico → Roseta; la razón de pérdida agregada por segmento (5) la alimenta. (c) El pedido cruzando a Producción (6) es un objeto frontera roto (cruza sin las promesas). (d) Comercial es dominio de captura **estratégica** (periódica, reflexiva), no operacional en tiempo real.
-
----
-
-## Revisión del alcance — ¿faltaban procesos?
-
-**Punto ciego estructural:** los barridos por departamento no ven las **interfaces**. La capa transaccional está organizada por área, así que su ceguera máxima está en las costuras que no pertenecen a nadie. Síntoma: dos de los tres análisis terminaron en una interfaz (Comercial→Producción, Ingeniería→taller). Ahí viven los *undiscussables* de Argyris.
-
-**Procesos omitidos que importan:**
-- **Postventa / SAT / Servicio** — dónde se aprende el comportamiento real del producto en campo; cierra los bucles abiertos de Ingeniería y Comercial.
-- **Planificación / S&OP como proceso propio** — replanificar es acto decisional denso (qué se sacrificó, qué plan se descartó). Equivalente al espacio de decisión evaporado de Ingeniería.
-- **Seguridad / near-miss** — cuasi-accidente: contrafactual puro, mismo modo de fallo (quien reporta queda señalado).
-- **Parametrización / TI** — no genera dato, decide *qué se puede registrar*. Vector de política implícita.
-
-*Condicionados al tipo de empresa:* I+D/Proyectos (ETO) y Medioambiente (proceso continuo).
-
-**Corrección al barrido:** diez áreas + las interfaces + tres procesos transversales.
+**Encaje.** (a) Comercial es el departamento más *decisional*: meter campos en la capa transaccional es un error de categoría. (b) El criterio de cualificación (2) es posicionamiento estratégico → Roseta; la razón de pérdida agregada por segmento (5) la alimenta. (c) El pedido cruzando a Producción (6) es un objeto frontera roto (cruza sin las promesas). (d) Comercial es dominio de captura **estratégica** (periódica, reflexiva), no de captura operacional en tiempo real.
 
 ---
 
-## Barrido de áreas pendientes
-
-**Compras.** Trío: criterio de selección, incidencia tolerada sin devolución, coste de gestión de proveedor problemático. Modo de fallo: el rating lo alimenta el comprador con relación personal con el proveedor (patrón de Comercial).
-
-**Mantenimiento.** El mejor instrumentado de los cinco (GMAO). Trío: síntoma previo, reparación informal sin orden, causa raíz honesta. Fuga *sensorial* (conocimiento tácito del operario), no capturable por evento.
-
-**Calidad.** Trío: NC menor no declarada, concesión y su criterio, coste de no calidad agregado por causa. Modo de fallo: declarar una NC cuesta → subdeclaración; cuanto más burocrático, más falso. Dato compartido con Producción: ninguno lo posee limpio.
-
-**Logística/Almacén.** Trío: discrepancia stock real, espera de muelle, rotura enmascarada. La rotura enmascarada es un contrafactual que *destruye la evidencia de su propia causa*.
-
-**RRHH.** Casi todo su transaccional es administrativo; el valor está entero fuera. Trío: mapa de competencias real, causa real de rotación, carga invisible. Es donde se ve el bus factor que los demás departamentos generan.
-
-**Patrón:** en las diez áreas el dato de alto valor es **decisional o tácito**, y donde lo genera un agente con relación personal está **sesgado en origen**.
-
----
-
-## Interfaces (primer nivel)
-
-Criterio: solo las costuras **portantes** (cruza una entidad real, con dato propio que ningún área reclama).
-
-- **I1 · Comercial → Planificación/Producción.** Cruza el pedido; se pierden las promesas. Origina la perturbación (Producción 1).
-- **I2 · Ingeniería → Producción/Taller.** Cruza el plano; se pierde la divergencia taller→plano *y* la restricción de fabricación (DFM que no ocurrió). Bidireccional.
-- **I3 · Producción → Calidad.** Cruza la pieza; se pierde la NC menor. Dato compartido y por eso huérfano.
-- **I4 · Compras → Almacén → Producción.** Cruza el material. *La misma causa recorre tres áreas cambiando de nombre*: incidencia tolerada → rotura enmascarada → espera "falta de material". Ejemplo canónico de ceguera del mapa departamental.
-- **I5 · Producción ↔ Mantenimiento.** Cruza la máquina; el síntoma vive en quien la usa y la acción en quien la cuida.
-- **I6 · Producción/Campo → Postventa → Ingeniería.** El bucle largo: modo de fallo de campo que debería cerrar hacia diseño. La más valiosa y la más rota.
-- **I7 · Comercial ↔ Postventa.** Cruza la cuenta; el enfriamiento del cliente que Postventa detecta antes que Comercial.
-- **I8 · Planificación ↔ todas.** No es costura, es un *hub*: la interfaz hecha proceso. Convergen I1, I4, I5.
-- **I9 · Parametrización/TI → todas.** Meta-interfaz: cruza la *forma* de todas las entidades. Decide qué fugas son incapturables. Vector de política implícita.
-
-**Lecturas transversales:**
-1. **La causa migra y se renombra** (I4). Capturarla es *reconciliar* vistas parciales, algo que ninguna área puede hacer sola.
-2. **Casi toda interfaz portante es un objeto frontera** (Star & Griesemer). La fuga ocurre cuando un lado reinterpreta sin que el artefacto lo absorba → ficción compartida. Reparar = el artefacto viaja con su rationale/promesa/desviación pegada.
-3. **Las interfaces son territorio de nadie, y por eso de la Dirección.** Undiscussables de Argyris. Alguien por encima de las dos áreas tiene que poseer la costura → capa decisional / Roseta.
-
-**No sobre-instrumentar:** portantes de verdad son **I2, I4, I6**. I1 ya fichada. I3/I5/I7 son señales de segundo orden. I8/I9 no se capturan, se diseñan.
-
----
 
 ## Profundización 4 — Postventa / SAT / Servicio (flujo de una incidencia de campo)
 
@@ -264,7 +213,7 @@ Caso atípico: el **más rico** en capa transaccional (WMS). Su fuga no es que f
 
 ## Profundización 7 — Mantenimiento (sensor tácito-predictivo del activo)
 
-El mejor instrumentado (GMAO), pero su valor está donde el GMAO no llega. Gemelo interno de Postventa: allí se diagnostica el producto en campo, aquí el activo en casa. Contrafactual dominante (como Seguridad): la avería *evitada* no deja rastro.
+El mejor instrumentado (GMAO, [CMMS](https://en.wikipedia.org/wiki/Computerized_maintenance_management_system)), pero su valor está donde el GMAO no llega. Gemelo interno de Postventa: allí se diagnostica el producto en campo, aquí el activo en casa. Contrafactual dominante (como Seguridad): la avería *evitada* no deja rastro.
 
 **1. Conocimiento del activo.** Escapa el mapa tácito de "qué máquina es delicada, cuál aguanta", que vive en el veterano. Bus factor sobre activos.
 
@@ -272,7 +221,7 @@ El mejor instrumentado (GMAO), pero su valor está donde el GMAO no llega. Gemel
 
 **3. Fallo incipiente detectado.** Escapa la decisión "¿aguanta hasta la parada programada o paro ahora?" y su criterio (producción vs. riesgo). Decisional.
 
-**4. Reparación.** Escapa la reparación informal sin orden (arreglado en 5 min, sin parte) que borra el historial de fiabilidad, y el apaño provisional que se vuelve permanente.
+**4. Reparación.** Escapa la reparación informal sin orden de reparación (arreglado en 5 min, sin parte) que borra el historial de fiabilidad, y el apaño provisional que se vuelve permanente.
 
 **5. Causa raíz.** Escapa el diagnóstico honesto vs. "se cambió la pieza". Análogo a Postventa 2 y Seguridad 6.
 
@@ -288,7 +237,55 @@ El mejor instrumentado (GMAO), pero su valor está donde el GMAO no llega. Gemel
 
 **Nota de cierre (I4 completa).** Con Compras, Logística y Mantenimiento quedan analizados los **tres tramos de I4**: Compras (origen: tolera) → Almacén (enmascara) → Producción (sufre). La costura más traicionera del mapa tiene ya sus tres piezas por separado; queda reconciliarlas, que es lo que ninguna de las tres áreas puede hacer sola.
 
+
+---
+## Revisión del alcance — ¿faltaban procesos?
+
+**Punto ciego estructural:** los barridos por departamento no ven las **interfaces**. La capa transaccional está organizada por área, así que su ceguera máxima está en las costuras que no pertenecen a nadie. Síntoma: dos de los tres análisis terminaron en una interfaz (Comercial→Producción, Ingeniería→taller). Ahí viven los *undiscussables* de Argyris.
+
+**Procesos omitidos que importan:**
+- **Planificación / S&OP como proceso propio** — replanificar es acto decisional denso (qué se sacrificó, qué plan se descartó). Equivalente al espacio de decisión evaporado de Ingeniería.
+- **Seguridad / near-miss** — cuasi-accidente: contrafactual puro, mismo modo de fallo (quien reporta queda señalado).
+- **Parametrización / TI** — no genera dato, decide *qué se puede registrar*. Es un vector de política implícita.
+
+Otros *procesos transversales condicionados al tipo de empresa (no universales)*: por ejemplo, I+D/Proyectos (ETO) y Medioambiente (proceso continuo).
+
+**Corrección al barrido:** diez áreas + las interfaces + tres procesos transversales.
+
 *(Los análisis de Planificación/S&OP y de Seguridad/Salud Laboral se trataron en la charla pero no se incorporan como apartados de este documento por decisión explícita.)*
+
+---
+
+### Barrido de áreas pendientes
+
+**Calidad.** Trío: NC menor no declarada, concesión y su criterio, coste de no calidad agregado por causa. Modo de fallo: declarar una NC cuesta → subdeclaración; cuanto más burocrático, más falso. Dato compartido con Producción: ninguno lo posee limpio.
+
+**RRHH.** Casi todo su transaccional es administrativo; el valor está entero fuera. Trío: mapa de competencias real, causa real de rotación, carga invisible. Es donde se ve el bus factor que los demás departamentos generan.
+
+**Patrón:** en las diez áreas el dato de alto valor es **decisional o tácito**, y donde lo genera un agente con relación personal está **sesgado en origen**.
+
+---
+
+## Interfaces (primer nivel)
+
+Criterio: solo las costuras **portantes** (cruza una entidad real, con dato propio que ningún área reclama).
+
+- **I1 · Comercial → Planificación/Producción.** Cruza el pedido; se pierden las promesas. Origina la perturbación (Producción 1).
+- **I2 · Ingeniería → Producción/Taller.** Cruza el plano; se pierde la divergencia taller→plano *y* la restricción de fabricación (DFM que no ocurrió). Bidireccional.
+- **I3 · Producción → Calidad.** Cruza la pieza; se pierde la NC menor. Dato compartido y por eso huérfano.
+- **I4 · Compras → Almacén → Producción.** Cruza el material. *La misma causa recorre tres áreas cambiando de nombre*: incidencia tolerada → rotura enmascarada → espera "falta de material". Ejemplo canónico de ceguera del mapa departamental.
+- **I5 · Producción ↔ Mantenimiento.** Cruza la máquina; el síntoma vive en quien la usa y la acción en quien la cuida.
+- **I6 · Producción/Campo → Postventa → Ingeniería.** El bucle largo: modo de fallo de campo que debería cerrar hacia diseño. La más valiosa y la más rota.
+- **I7 · Comercial ↔ Postventa.** Cruza la cuenta; el enfriamiento del cliente que Postventa detecta antes que Comercial.
+- **I8 · Planificación ↔ todas.** No es costura, es un *hub*: la interfaz hecha proceso. Convergen I1, I4, I5.
+- **I9 · Parametrización/TI → todas.** Meta-interfaz: cruza la *forma* de todas las entidades. Decide qué fugas son incapturables. Vector de política implícita.
+
+**Lecturas transversales:**
+1. **La causa migra y se renombra** (I4). Capturarla es *reconciliar* vistas parciales, algo que ninguna área puede hacer sola.
+2. **Casi toda interfaz portante es un objeto frontera** (Star & Griesemer). La fuga ocurre cuando un lado reinterpreta sin que el artefacto lo absorba → ficción compartida. Reparar = el artefacto viaja con su rationale/promesa/desviación pegada.
+3. **Las interfaces son territorio de nadie, y por eso de la Dirección.** Undiscussables de Argyris. Alguien por encima de las dos áreas tiene que poseer la costura → capa decisional / Roseta.
+
+**No sobre-instrumentar:** portantes de verdad son **I2, I4, I6**. I1 ya fichada. I3/I5/I7 son señales de segundo orden. I8/I9 no se capturan, se diseñan.
 
 ---
 

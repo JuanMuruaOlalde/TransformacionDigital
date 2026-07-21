@@ -2,7 +2,7 @@
 
 **Qué es este documento.** Mapa consolidado de los datos operacionales y estratégicos que una empresa genera pero que su capa transaccional (ERP/CRM/PLM/GMAO) es estructuralmente incapaz de registrar. No son campos que falten: son datos que no tienen tabla donde vivir porque pertenecen a la capa decisional, al  ámbito tácito o al contrafactual.
 
-**nota:**" Este documento es una especie de resumen de una charla sobre el tema detallada en este otro [documento](transcripcion_charla_fugas_datos-v02-.md)
+**nota:** Este documento es una especie de resumen de una charla sobre el tema detallada en este otro [documento](transcripcion_charla_fugas_datos-v02-.md)
 
 **Disclaimer:** Este documento es fruto de unas cuantas charlas con [Claude](https://claude.ai). La mayor parte de su contenido lo ha pensado y redactado esa IA.
 
@@ -52,8 +52,8 @@ Para cada área: el trío de datos de alto valor + el modo de fallo dominante de
 - *Modo de fallo:* el rating lo alimenta el comprador, que tiene relación personal con el proveedor. Mismo patrón que Comercial.
 
 ### Mantenimiento
-- **Síntoma previo a la avería** que el operario percibe ("iba raro", vibración) antes de que haya orden.
-- **Reparación informal sin orden** que borra el historial real de fiabilidad del activo.
+- **Síntoma previo a la avería** que el operario percibe ("iba raro", vibración) antes de que haya orden de reparación.
+- **Reparación informal sin orden** que compromete el historial real de fiabilidad del activo.
 - **Causa raíz honesta** vs. la que cierra la orden ("se cambió la pieza" no es por qué falló).
 - *Modo de fallo:* fuga **sensorial** (conocimiento tácito del operario sobre su máquina), no capturable por evento.
 
@@ -76,29 +76,29 @@ Para cada área: el trío de datos de alto valor + el modo de fallo dominante de
 - *Nota:* capa transaccional de las más pobres; el valor está en el patrón agregado (decisional), no en el aviso individual. Infravalorada por diseño —se ve como coste, no como fuente del dato más caro de obtener de otro modo—.
 
 ### RRHH
-- **Mapa de conocimiento real** (quién sabe hacer qué de verdad, no la ficha de puesto): sostiene el bus factor.
+- **Mapa de conocimiento real** (quién sabe hacer qué de verdad, no la ficha de puesto): sostiene el [bus factor](https://en.wikipedia.org/wiki/Bus_factor).
 - **Motivos reales de rotación** (entrevista de salida sincera vs. de trámite).
 - **Sobrecarga y conocimiento tácito no visible en fichajes** (el cuello de botella humano al que todos preguntan).
 - *Nota:* casi todo su transaccional es administrativo; el valor está entero fuera de él. Es donde se ve el bus factor que los demás departamentos generan.
 
 ### Administración / Finanzas
-- Casi todo es transaccional. Lo que escapa es el **criterio**: por qué una aprobación excepcional, cómo se prioriza qué se paga, coste real de gestionar un moroso.
+- Casi todo es transaccional. Lo que escapa es el **criterio**: el por qué de una aprobación excepcional, cómo se prioriza qué se paga, coste real de gestionar un moroso,...
 
 ### Dirección
 - La **estrategia** rara vez tiene capa transaccional: decisiones, supuestos de mercado y su seguimiento. Materia de la Roseta.
 
-**Patrón que cierra las áreas:** en todas, el dato de alto valor es **decisional o tácito**, nunca transaccional. Y donde lo genera un agente con relación personal (Compras→proveedor, Comercial→cliente, Mantenimiento→su máquina) está **sesgado en origen**, no solo ausente.
+**Patrón que cierra las áreas:** en todas las áreas el dato de alto valor es **decisional o tácito**, nunca transaccional. Y donde lo genera un agente con relación personal (Compras→proveedor, Comercial→cliente, Mantenimiento→su máquina) está **sesgado en origen**, no solo ausente.
 
 ---
 
 ## 3. Interfaces (objeto de análisis de primer nivel)
 
-La capa transaccional está organizada por área, así que su ceguera máxima está en las **costuras entre áreas**, que no pertenecen a nadie. Se mapean solo las costuras **portantes**: por las que cruza una entidad real y donde el traspaso tiene dato propio que ningún área reclama.
+La capa transaccional está organizada por área, así que su ceguera máxima está en las **costuras entre áreas**, que no pertenecen a nadie. Se mapean solo las costuras **portantes**: costuras por las que cruza una entidad real y en las cuales el traspaso tiene dato propio que ningún área reclama.
 
 | # | Interfaz | Qué cruza | Qué se pierde |
 |---|----------|-----------|---------------|
-| **I1** | Comercial → Planificación/Producción | El pedido | Las promesas (plazo, flexibilidad). Origina la perturbación del pedido "que se cuela". |
-| **I2** | Ingeniería → Producción/Taller | El plano/modelo | Divergencia taller→plano *y* restricción de fabricación que Ingeniería no conoció (DFM que no ocurrió). Bidireccional. |
+| **I1** | Comercial → Planificación/Producción | El pedido | Las promesas (plazo, flexibilidad). Origina la perturbación del pedido "que se cuela" en la planificación. |
+| **I2** | Ingeniería → Producción/Taller | El plano/modelo | Divergencia taller→plano *y* restricción de fabricación que Ingeniería no conoció ([DFM](https://en.wikipedia.org/wiki/Design_for_manufacturability) que no ocurrió). Bidireccional. |
 | **I3** | Producción → Calidad | La pieza y su conformidad | NC menor resuelta en línea: dato compartido y por eso huérfano. |
 | **I4** | Compras → Almacén → Producción | El material | La misma causa recorre tres áreas cambiando de nombre: incidencia tolerada → rotura enmascarada → espera "falta de material". |
 | **I5** | Producción ↔ Mantenimiento | La máquina y su estado | El síntoma previo que ve quien *usa* el activo no llega a quien lo *cuida* antes de la avería. |
@@ -107,12 +107,12 @@ La capa transaccional está organizada por área, así que su ceguera máxima es
 | **I8** | Planificación ↔ todas | (hub, no costura) | La interfaz hecha proceso: planes descartados y trade-off al meter la urgencia. Nodo donde convergen I1, I4, I5. |
 | **I9** | Parametrización/TI → todas | (meta-interfaz) | No cruza una entidad: cruza la *forma* de todas. Al fijar qué campos existen, decide qué fugas son incapturables. Vector de política implícita. |
 
-**Portantes de verdad (candidatas a captura):** I2, I4, I6 — donde cruza una entidad física y la fuga se propaga aguas abajo multiplicándose. I1 ya fichada. I3/I5/I7 son señales tempranas de segundo orden. I8/I9 no se capturan, se *diseñan*.
+**Portantes de verdad (candidatas a captura):** I2, I4, I6 — donde cruza una entidad física y la fuga de información se propaga aguas abajo multiplicándose. I1 ya fichada. I3/I5/I7 son señales tempranas de segundo orden. I8/I9 no se capturan, se *diseñan*.
 
 ### Tres lecturas transversales
 1. **La causa migra y se renombra** (I4 es el caso canónico). El dato de interfaz no es un evento nuevo: es *el mismo* evento que cada área ve mutilado. Capturarlo es **reconciliar** vistas parciales, algo que ninguna área puede hacer sola.
-2. **Casi toda interfaz portante es un objeto frontera** (Star & Griesemer): un artefacto que debería mantener identidad compartida y admitir reinterpretación local. La fuga ocurre cuando un lado reinterpreta *sin que el artefacto lo absorba* → deja de ser objeto frontera y pasa a ficción compartida. Reparar = hacer que el artefacto viaje con su rationale/promesa/desviación pegada.
-3. **Las interfaces son territorio de nadie, y por eso de la Dirección.** Ahí viven los *undiscussables* de Argyris ("eso lo prometió Comercial", "eso lo mal-diseñó Ingeniería"). Alguien por encima de las dos áreas tiene que poseer la costura: materia de capa decisional / Roseta, no de captura operacional distribuida.
+2. **Casi toda interfaz portante es un [objeto frontera](https://en.wikipedia.org/wiki/Boundary_object)** (Star & Griesemer): un artefacto que debería mantener identidad compartida y admitir reinterpretación local. La fuga ocurre cuando un lado reinterpreta *sin que el artefacto lo absorba* → deja de ser objeto frontera y pasa a ser ficción compartida. Una forma de mitigarla = hacer que el artefacto viaje con su rationale/promesa/desviación pegada.
+3. **Las interfaces no son territorio de nadie, y por eso han de ser de la Dirección.** Ahí viven los *undiscussables* de Argyris ("eso lo prometió Comercial", "eso lo mal-diseñó Ingeniería"). Alguien por encima de las dos áreas tiene que poseer la costura: es materia de capa decisional / Roseta, no de captura operacional distribuida.
 
 ---
 
@@ -123,14 +123,14 @@ La capa transaccional está organizada por área, así que su ceguera máxima es
 - **Seguridad / near-miss** — el cuasi-accidente: contrafactual puro, mismo modo de fallo que la razón de pérdida (quien lo reporta puede quedar señalado).
 - **Parametrización de sistemas / TI** — no genera dato: decide *qué se puede registrar*. Quien parametriza fija política sin hacerla explícita (ver I9).
 
-*Condicionados al tipo de empresa (no universales):* I+D/Proyectos (en ETO absorbe a Ingeniería y Planificación) y Medioambiente (sube de rango en proceso continuo).
+Otros *procesos transversales condicionados al tipo de empresa (no universales)*: por ejemplo, I+D/Proyectos (en ETO absorbe a Ingeniería y Planificación) y Medioambiente (sube de rango en proceso continuo).
 
 ---
 
 ## 5. Síntesis operativa
 
 - El dato de alto valor es siempre **decisional, tácito o contrafactual** — nunca transaccional.
-- Donde lo genera un agente con relación personal, está **sesgado en origen**: la captura acoplada a ese agente hereda su sesgo. Triangular o desacoplar.
+- Donde el dato lo genera un agente con vinculación personal en él, está **sesgado en origen**: cualquier captura acoplada a ese agente hereda su sesgo. Es mejor triangular o desacoplar.
 - La captura acoplada al **cierre de tarea** produce coartadas (teatro), no conocimiento. El registro sincero se hace en el momento de dudar, no en el de cerrar.
 - Las fugas más ricas viven en las **interfaces**, no dentro de las áreas — y son territorio de nadie.
-- No sobre-instrumentar: embeber la captura en el artefacto de gestión que ya existe (p. ej. el flow board captura la causa de espera sin acto de registro adicional) en lugar de añadir un parte encima.
+- No sobre-instrumentar: embeber la captura en el artefacto de gestión que ya existe (p. ej. un [flow board](https://www.susosise.es/documentos/Lista_de_tareas_priorizada_en_cabeza.pdf) captura la causa de espera sin acto de registro adicional) en lugar de añadir un parte encima.
