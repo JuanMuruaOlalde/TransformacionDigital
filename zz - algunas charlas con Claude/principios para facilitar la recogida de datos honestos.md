@@ -41,7 +41,7 @@ La cultura justa (buscar causas/soluciones en lugar de quien/culpables) solo dis
 
 ## 6 Criterios de clasificación
 
-1. **Reglas predefinidas claras** ([bight-line rule](https://en.wikipedia.org/wiki/Bright-line_rule)), no juicio en el momento: la persona nunca decide si algo cuenta como anomalía; lo decide una regla pactada de antemano.
+1. **Reglas predefinidas claras** ([bright-line rule](https://en.wikipedia.org/wiki/Bright-line_rule)), no juicio en el momento: la persona nunca decide si algo cuenta como anomalía; lo decide una regla pactada de antemano.
 2. Categorías **MECE, lista cerrada corta**, definidas por estado observable o por decisión — **nunca por intención inferida**. Elegir, no interpretar.
 3. Sin texto libre en el eje analizable (un campo libre opcional para el matiz, podria tener sentido).
 4. **Cada categoría, falsable**: auditable contra un rastro o exigiendo un puntero barato a una justificación (enlazar la comunicación, nombrar la feature, citar la norma). Una categoría no contrastable es coartada cómoda incluso sin mala fe.
