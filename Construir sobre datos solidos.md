@@ -246,9 +246,9 @@ Desde el principio, se deben de establecer umbrales claros acerca de:
 
 Además, las personas consumidoras o usuarias de datos sensibles tienen también responsabilidades en su uso. Han de comprometerse a:
 
-- Preocuparse por, y pedir ser informadas de, el alcance y restricciones de uso. 
+- Preocuparse por, y pedir ser informadas de, el alcance y las restricciones de uso. 
 
-- Respetar restricciones.
+- Respetar las restricciones.
 
 - Interpretar correctamente el alcance.
 
@@ -353,7 +353,7 @@ Es muy importante tener designada una persona **responsable del modelo IA** que 
 
 - Protección frente a entradas maliciosas.
 
-- Validavilidad y explicabilidad de resultados inferidos.
+- Validabilidad y explicabilidad de resultados inferidos.
 
 - Control de derivas y sesgos.
 
