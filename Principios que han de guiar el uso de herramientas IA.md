@@ -24,9 +24,28 @@ Para reportar la contribución, como mínimo se ha de incluir una firma del esti
 
 Pero es mejor si se incluye un párrafo resumiendo en qué partes y para qué tareas se han utilizado qué herramientas IA. Por ejemplo: [Rust LLM use disclosure guidelines](https://rustc-dev-guide.rust-lang.org/llm-guidance/writing.html#disclosure-guidelines)
 
-## Trabajo propio, aportar valor
+## Trabajo propio: aportar valor
 
 A la hora de enviar nuestra contribución a alguien. Se aplica lo que suelen comentar en algunos foros: "*si quisieramos la opinión de la IA tal cual, se la pediriamos nosotros mismos*".
+
+## Trabajo propio: aprender y adquirir experiencia
+
+Uno de los grandes peligros de la IA es que es demasiado buena. En muchas situaciones,  es capaz de entregar un resultado final bastante bueno con solo una petición diciendo simplemente lo que se desea obtener.
+
+Esto elimina totalmente el esfuerzo que permite a las personas aprender y adquirir experiencia.
+
+Por ahora, hay personas que han adquirido esa experiencia a lo largo de años. Pero, ¿y las nuevas generaciones que ya tienen IAs para que les hagan el trabajo?, ¿cómo van a adquirir esa experiencia?.
+
+No les queda otra que tener la disciplina suficiente y preocuparse por aprender y practicar. 
+
+La buena noticia es que pueden usar la IA también como profesora. Al igual que la IA es buena resolviendo trabajos. También es buena teniendo paciencia, explicando conceptos, poniendo/corrigiendo ejercicios, planteando retos según nivel de conocimiento,...
+
+[Report of MIT's AdHoc Committe on AI use in Teaching, Learning and Research Training](https://aiandeducation.mit.edu/)
+
+[La IA está matando la programación, ¿qué le está pasando a los junior?](https://www.youtube.com/watch?v=JzI04oGNcVw)
+
+La mala noticia es que es difícil hacer esfuerzos cuando, aparentemente, no tienes necesidad de hacerlos. :-(
+
 
 ## Agentes IA
 
@@ -52,6 +71,8 @@ Lo dicho al principio: *Se use la herramienta que se use, la persona humana que 
 
 > Si una persona no puede revisar y comprender los resultados obtenidos con cierta herramienta en cierto trabajo. Si no puede responder a cuestiones (*) que se planteen acerca de los resultados obtenidos. => Esa persona no debería usar esa herramienta para ese trabajo.
 
-(*) Cuestiones relativas al dominio de aplicación de los resultados. La persona puede no saber cómo funciona internamente la herramienta. Pero sí que ha de saber manejar la herramienta y saber interpretar/revisar/comprender los resultados que produce.
+(*) Cuestiones relativas al dominio de aplicación de los resultados. 
+
+La persona puede no saber cómo funciona internamente la herramienta. Pero sí que ha de saber manejar la herramienta y saber interpretar/revisar/comprender los resultados que produce.
 
 
