@@ -1,5 +1,7 @@
 # Buenas prácticas en la captura y tratamiento de datos: de la capa operativa al repositorio analítico
 
+nota: el borrador inicial de este documento ha sido elaborado usando IA; tomando ese borrador como inspiración y guia, se ha escrito este documento manualmente partiendo desde un documento en blanco.
+
 ## Conceptos básicos
 
 Los datos transaccionales tienen distintas caracteristicas que los datos analíticos.
